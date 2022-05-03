@@ -22,10 +22,13 @@
 
 <template>
   <div class="counter-container">
-    <h1>Count: {{ count }}</h1>
+    <div class="text-container">
+      <h1>Count:</h1>
+      <h1 class="count">{{ count }}</h1>
+    </div>
     <div class="btn-container">
-      <button @click="decrement(count)">Decrement</button>
-      <button @click="increment(count)">Increment</button>
+      <button class="decrement" @click="decrement(count)">Decrement</button>
+      <button class="increment" @click="increment(count)">Increment</button>
     </div>
   </div>
 </template>
